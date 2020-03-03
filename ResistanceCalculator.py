@@ -10,7 +10,7 @@ resistor8 = 8
 resistor9 = 9
 resistor10 = 10
 
-
+# Assigns resistance level to the added resistor so it can be placed in an equation
 def adding_resistor_assignment():
     global adding_resistor
     global adding_resistor_ohm
@@ -35,7 +35,7 @@ def adding_resistor_assignment():
     elif adding_resistor == resistor10:
         adding_resistor_ohm = resistor10_ohm
 
-
+# Assigns resistance level to second resistor so it can be placed in an equation
 def first_resistor_assignment():
     global first_resistor_number
     global first_resistor_ohm
@@ -88,6 +88,9 @@ def equations():
     global resistor8_ohm
     global resistor9_ohm
     global resistor10_ohm
+
+    # This is the equation for resistors in series
+
     if (adding_resistor == resistor1 or first_resistor_number == resistor1) and series_parallel == 1:
         resistor1_ohm = adding_resistor_ohm + first_resistor_ohm
         final = resistor1_ohm
@@ -119,7 +122,7 @@ def equations():
         resistor10_ohm = adding_resistor_ohm + first_resistor_ohm
         final = resistor10_ohm
 
-    # This id for in parallel
+    # This is the equation for resistors in parallel
 
     elif (adding_resistor == resistor1 or first_resistor_number == resistor1) and series_parallel == 2:
         resistor1_ohm = (adding_resistor_ohm * first_resistor_ohm) / (adding_resistor_ohm + first_resistor_ohm)
@@ -131,7 +134,7 @@ def equations():
         resistor3_ohm = (adding_resistor_ohm * first_resistor_ohm) / (adding_resistor_ohm + first_resistor_ohm)
         final = resistor3_ohm
     elif (adding_resistor == resistor4 or first_resistor_number == resistor4) and series_parallel == 2:
-        resistor4_ohm = (adding_resistor_ohm * first_resistor_ohm) /(adding_resistor_ohm + first_resistor_ohm)
+        resistor4_ohm = (adding_resistor_ohm * first_resistor_ohm) / (adding_resistor_ohm + first_resistor_ohm)
         final = resistor4_ohm
     elif (adding_resistor == resistor5 or first_resistor_number == resistor5) and series_parallel == 2:
         resistor5_ohm = (adding_resistor_ohm * first_resistor_ohm) / (adding_resistor_ohm + first_resistor_ohm)
@@ -181,13 +184,16 @@ for i in range(resistor_amount):
 for j in range(resistor_amount - 1):
     resistor_number = j + 2
     if resistor_number >= 2:
+        # Asks what resistor you start off with
         first_resistor_number = int(input("What resistor would you like to add: "))
+        # Asks what resistor you would like to add to the first resistor
         adding_resistor = int(
             input("Which resistor would you like to add resistor " + str(first_resistor_number) + " to: "))
         print("If in series type s. If in parallel type p.")
+        # Asks if you would like these resistors to be in parallel or in series
         series_parallel_real = str(input("Would you like to add resistor " + str(resistor_number) + " to resistor " + str(
             adding_resistor) + " in parallel or in series: "))
-        if series_parallel_real == 's' or'S':
+        if series_parallel_real == 's' or 'S':
             series_parallel = 1
         elif series_parallel_real == 'p' or 'P':
             series_parallel = 2
