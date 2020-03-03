@@ -1,14 +1,5 @@
 # Different resistor variables
-resistor1 = 1
-resistor2 = 2
-resistor3 = 3
-resistor4 = 4
-resistor5 = 5
-resistor6 = 6
-resistor7 = 7
-resistor8 = 8
-resistor9 = 9
-resistor10 = 10
+resistor1, resistor2, resistor3, resistor4, resistor5, resistor6, resistor7, resistor8, resistor9, resistor10,  = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 
 # Assigns resistance level to the added resistor so it can be placed in an equation
 def adding_resistor_assignment():
