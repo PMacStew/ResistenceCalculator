@@ -184,7 +184,7 @@ for j in range(resistor_amount - 1):
         first_resistor_number = int(input("What resistor would you like to add: "))
         adding_resistor = int(
             input("Which resistor would you like to add resistor " + str(first_resistor_number) + " to: "))
-        print("If in series type 1. If in parallel type 2.")
+        print("If in series type s. If in parallel type p.")
         series_parallel_real = str(input("Would you like to add resistor " + str(resistor_number) + " to resistor " + str(
             adding_resistor) + " in parallel or in series: "))
         if series_parallel_real == 's' or'S':
