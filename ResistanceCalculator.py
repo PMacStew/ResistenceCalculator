@@ -1,5 +1,7 @@
 # Different resistor variables
-resistor1, resistor2, resistor3, resistor4, resistor5, resistor6, resistor7, resistor8, resistor9, resistor10,  = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+resistor1, resistor2, resistor3, resistor4, resistor5, resistor6, resistor7, resistor8, resistor9, resistor10,\
+    = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
 
 # Assigns resistance level to the added resistor so it can be placed in an equation
 def adding_resistor_assignment():
@@ -25,6 +27,7 @@ def adding_resistor_assignment():
         adding_resistor_ohm = resistor9_ohm
     elif adding_resistor == resistor10:
         adding_resistor_ohm = resistor10_ohm
+
 
 # Assigns resistance level to second resistor so it can be placed in an equation
 def first_resistor_assignment():
@@ -182,8 +185,9 @@ for j in range(resistor_amount - 1):
             input("Which resistor would you like to add resistor " + str(first_resistor_number) + " to: "))
         print("If in series type s. If in parallel type p.")
         # Asks if you would like these resistors to be in parallel or in series
-        series_parallel_real = str(input("Would you like to add resistor " + str(resistor_number) + " to resistor " + str(
-            adding_resistor) + " in parallel or in series: "))
+        series_parallel_real = str(
+            input("Would you like to add resistor " + str(resistor_number) + " to resistor " + str(
+                adding_resistor) + " in parallel or in series: "))
         if series_parallel_real == 's' or 'S':
             series_parallel = 1
         elif series_parallel_real == 'p' or 'P':
