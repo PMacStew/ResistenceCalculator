@@ -198,3 +198,4 @@ for j in range(resistor_amount - 1):
         first_resistor_assignment()
         equations()
 print("Your overall resistance is: " + str(final))
+''
