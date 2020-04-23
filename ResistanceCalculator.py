@@ -10,6 +10,7 @@ resistor8 = 8
 resistor9 = 9
 resistor10 = 10
 
+
 # Assigns resistance level to the added resistor so it can be placed in an equation
 def adding_resistor_assignment():
     global adding_resistor
@@ -34,6 +35,7 @@ def adding_resistor_assignment():
         adding_resistor_ohm = resistor9_ohm
     elif adding_resistor == resistor10:
         adding_resistor_ohm = resistor10_ohm
+
 
 # Assigns resistance level to second resistor so it can be placed in an equation
 def first_resistor_assignment():
@@ -94,64 +96,64 @@ def equations():
     if (adding_resistor == resistor1 or first_resistor_number == resistor1) and series_parallel == 1:
         resistor1_ohm = adding_resistor_ohm + first_resistor_ohm
         final = resistor1_ohm
-    elif (adding_resistor == resistor2 or first_resistor_number == resistor2) and series_parallel == 1:
+    if (adding_resistor == resistor2 or first_resistor_number == resistor2) and series_parallel == 1:
         resistor2_ohm = adding_resistor_ohm + first_resistor_ohm
         final = resistor2_ohm
-    elif (adding_resistor == resistor3 or first_resistor_number == resistor3) and series_parallel == 1:
+    if (adding_resistor == resistor3 or first_resistor_number == resistor3) and series_parallel == 1:
         resistor3_ohm = adding_resistor_ohm + first_resistor_ohm
         final = resistor3_ohm
-    elif (adding_resistor == resistor4 or first_resistor_number == resistor4) and series_parallel == 1:
+    if (adding_resistor == resistor4 or first_resistor_number == resistor4) and series_parallel == 1:
         resistor4_ohm = adding_resistor_ohm + first_resistor_ohm
         final = resistor4_ohm
-    elif (adding_resistor == resistor5 or first_resistor_number == resistor5) and series_parallel == 1:
+    if (adding_resistor == resistor5 or first_resistor_number == resistor5) and series_parallel == 1:
         resistor5_ohm = adding_resistor_ohm + first_resistor_ohm
         final = resistor5_ohm
-    elif (adding_resistor == resistor6 or first_resistor_number == resistor6) and series_parallel == 1:
+    if (adding_resistor == resistor6 or first_resistor_number == resistor6) and series_parallel == 1:
         resistor6_ohm = adding_resistor_ohm + first_resistor_ohm
         final = resistor6_ohm
-    elif (adding_resistor == resistor7 or first_resistor_number == resistor7) and series_parallel == 1:
+    if (adding_resistor == resistor7 or first_resistor_number == resistor7) and series_parallel == 1:
         resistor7_ohm = adding_resistor_ohm + first_resistor_ohm
         final = resistor7_ohm
-    elif (adding_resistor == resistor8 or first_resistor_number == resistor8) and series_parallel == 1:
+    if (adding_resistor == resistor8 or first_resistor_number == resistor8) and series_parallel == 1:
         resistor8_ohm = adding_resistor_ohm + first_resistor_ohm
         final = resistor8_ohm
-    elif (adding_resistor == resistor9 or first_resistor_number == resistor9) and series_parallel == 1:
+    if (adding_resistor == resistor9 or first_resistor_number == resistor9) and series_parallel == 1:
         resistor9_ohm = adding_resistor_ohm + first_resistor_ohm
         final = resistor9_ohm
-    elif (adding_resistor == resistor10 or first_resistor_number == resistor10) and series_parallel == 1:
+    if (adding_resistor == resistor10 or first_resistor_number == resistor10) and series_parallel == 1:
         resistor10_ohm = adding_resistor_ohm + first_resistor_ohm
         final = resistor10_ohm
 
     # This is the equation for resistors in parallel
 
-    elif (adding_resistor == resistor1 or first_resistor_number == resistor1) and series_parallel == 2:
+    if (adding_resistor == resistor1 or first_resistor_number == resistor1) and series_parallel == 2:
         resistor1_ohm = (adding_resistor_ohm * first_resistor_ohm) / (adding_resistor_ohm + first_resistor_ohm)
         final = resistor1_ohm
-    elif (adding_resistor == resistor2 or first_resistor_number == resistor2) and series_parallel == 2:
+    if (adding_resistor == resistor2 or first_resistor_number == resistor2) and series_parallel == 2:
         resistor2_ohm = (adding_resistor_ohm * first_resistor_ohm) / (adding_resistor_ohm + first_resistor_ohm)
         final = resistor2_ohm
-    elif (adding_resistor == resistor3 or first_resistor_number == resistor3) and series_parallel == 2:
+    if (adding_resistor == resistor3 or first_resistor_number == resistor3) and series_parallel == 2:
         resistor3_ohm = (adding_resistor_ohm * first_resistor_ohm) / (adding_resistor_ohm + first_resistor_ohm)
         final = resistor3_ohm
-    elif (adding_resistor == resistor4 or first_resistor_number == resistor4) and series_parallel == 2:
+    if (adding_resistor == resistor4 or first_resistor_number == resistor4) and series_parallel == 2:
         resistor4_ohm = (adding_resistor_ohm * first_resistor_ohm) / (adding_resistor_ohm + first_resistor_ohm)
         final = resistor4_ohm
-    elif (adding_resistor == resistor5 or first_resistor_number == resistor5) and series_parallel == 2:
+    if (adding_resistor == resistor5 or first_resistor_number == resistor5) and series_parallel == 2:
         resistor5_ohm = (adding_resistor_ohm * first_resistor_ohm) / (adding_resistor_ohm + first_resistor_ohm)
         final = resistor5_ohm
-    elif (adding_resistor == resistor6 or first_resistor_number == resistor6) and series_parallel == 2:
+    if (adding_resistor == resistor6 or first_resistor_number == resistor6) and series_parallel == 2:
         resistor6_ohm = (adding_resistor_ohm * first_resistor_ohm) / (adding_resistor_ohm + first_resistor_ohm)
         final = resistor6_ohm
-    elif (adding_resistor == resistor7 or first_resistor_number == resistor7) and series_parallel == 2:
+    if (adding_resistor == resistor7 or first_resistor_number == resistor7) and series_parallel == 2:
         resistor7_ohm = (adding_resistor_ohm * first_resistor_ohm) / (adding_resistor_ohm + first_resistor_ohm)
         final = resistor7_ohm
-    elif (adding_resistor == resistor8 or first_resistor_number == resistor8) and series_parallel == 2:
+    if (adding_resistor == resistor8 or first_resistor_number == resistor8) and series_parallel == 2:
         resistor8_ohm = (adding_resistor_ohm * first_resistor_ohm) / (adding_resistor_ohm + first_resistor_ohm)
         final = resistor8_ohm
-    elif (adding_resistor == resistor9 or first_resistor_number == resistor9) and series_parallel == 2:
+    if (adding_resistor == resistor9 or first_resistor_number == resistor9) and series_parallel == 2:
         resistor9_ohm = (adding_resistor_ohm * first_resistor_ohm) / (adding_resistor_ohm + first_resistor_ohm)
         final = resistor9_ohm
-    elif (adding_resistor == resistor10 or first_resistor_number == resistor10) and series_parallel == 2:
+    if (adding_resistor == resistor10 or first_resistor_number == resistor10) and series_parallel == 2:
         resistor10_ohm = (adding_resistor_ohm * first_resistor_ohm) / (adding_resistor_ohm + first_resistor_ohm)
         final = resistor10_ohm
 
@@ -187,18 +189,17 @@ for j in range(resistor_amount - 1):
         # Asks what resistor you start off with
         first_resistor_number = int(input("What resistor would you like to add: "))
         # Asks what resistor you would like to add to the first resistor
-        adding_resistor = int(
-            input("Which resistor would you like to add resistor " + str(first_resistor_number) + " to: "))
+        adding_resistor = int(input("Which resistor would you like to add resistor " + str(first_resistor_number) + " to: "))
         print("If in series type s. If in parallel type p.")
         # Asks if you would like these resistors to be in parallel or in series
-        series_parallel_real = str(input("Would you like to add resistor " + str(resistor_number) + " to resistor " + str(
+        series_parallel_real = str(input("Would you like to add resistor " + str(first_resistor_number) + " to resistor " + str(
             adding_resistor) + " in parallel or in series: "))
-        if series_parallel_real == 's' or 'S':
+        if series_parallel_real == 's' or series_parallel_real == 'S':
             series_parallel = 1
-        elif series_parallel_real == 'p' or 'P':
+        elif series_parallel_real == 'p' or series_parallel_real == 'P':
             series_parallel = 2
         else:
-            print("Invalid answer")
+            print("Invalid input.")
         adding_resistor_assignment()
         first_resistor_assignment()
         equations()
